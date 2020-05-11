@@ -125,8 +125,7 @@ src
 
 #### ERD Model
 
-![Dummy Link](https://i.imgur.com/RkpGHb9.png)
-
+<img src="./erm.png"  height="auto" width="900" >
 #### Data Heirarchy
 
 > Use this section to display the database, table, and attribute heirarchy.
@@ -165,6 +164,7 @@ database_db
 > Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
 
 - only allow the users that posted the dance workout to edit/delete it
-- category or instructors/ 
+- instructors /
+- youtube videos
 
 ---
