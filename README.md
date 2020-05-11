@@ -73,7 +73,7 @@ Digital assets used with full licensing and permission from [Unsplash](). Digita
 
 > Use the Wireframes section to display desktop, tablet and mobile views.
 
-![Dummy Link](./landing.png)
+<img src="./landing.png" align="center" height="auto" width="600" >
 
 - Desktop Landing
 
