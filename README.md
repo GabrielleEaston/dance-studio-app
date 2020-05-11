@@ -125,7 +125,8 @@ src
 
 #### ERD Model
 
-<img src="./erm.png"  height="auto" width="900" >
+![Dummy Link](https://i.imgur.com/RkpGHb9.png)
+
 #### Data Heirarchy
 
 > Use this section to display the database, table, and attribute heirarchy.
