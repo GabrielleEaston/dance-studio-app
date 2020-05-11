@@ -125,7 +125,7 @@ src
 
 #### ERD Model
 
-![Dummy Link](https://i.imgur.com/RkpGHb9.png)
+![Dummy Link](https://i.imgur.com/wfy9MNa.png)
 
 #### Data Heirarchy
 
