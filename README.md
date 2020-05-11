@@ -109,9 +109,24 @@ src
       |__ graphics
       |__ images
       |__ mockups
-|__ components/
-      |__ Header.jsx
+|__ client/
+  |__ App.jsx
+  |__ Index.jsx
+  |__ src/
+    |__ components/
+        |__ Header.jsx
+        |__ Main.jsx
+          |__ Hero.jsx
+          |__ Login.jsx
+          |__ Register.jsx
+          |__ DanceList.jsx
+            |__ DanceDetails.jsx
+            |__ CreateItem.jsx
+              |__ EditList
+              |__ DeleteItem
 |__ services/
+    |__ apiConfig.jsx
+```
 
 ```
 
