@@ -2,7 +2,7 @@
 
 #Share your favorite dance exercices through online platforms
 
-# Retro 
+# Retro
 
 ![](https://media.giphy.com/media/T0dcCGcNjVt16/giphy.gif)
 
@@ -34,20 +34,17 @@ _**Retro ** Dance like nobody's watching. Like it's 1986. @home_
 
 ### Core Features
 
-
-
 - _Full-stack, full-CRUD app, utilizing a RESTful JSON API with the so-called "React on Rails" stack_
-
- 
 
 ### Goals
 
 - Have a **RESTful JSON API**.
 - Build a **Ruby on Rails** server, exposing RESTful JSON endpoints.
 - Build a database with at least 3 tables:
-    - 1 user table
-    - 2 other tables, of your choosing
-    - There must be at least 2 pairs of associated tables. (1:m _or_ m:m)
+
+  - 1 user table
+  - 2 other tables, of your choosing
+  - There must be at least 2 pairs of associated tables. (1:m _or_ m:m)
   - Utilize **Rails** to define models for interacting with the database.
   - Implement Authentication using **JWT**.
   - Implement working generic controller actions for full-CRUD (`index`, `show`, `create`, `update`, `delete`) between the 2 non-user tables AND partial-CRUD (`create`, at least) for the user table.
@@ -64,15 +61,13 @@ _**Retro ** Dance like nobody's watching. Like it's 1986. @home_
   - Perform `index` or `show` actions, **whether or not they are logged in**.^
   - Perform `create`, `update`, and `delete` actions **when logged in**.
 
-
 ### Permissions
 
-Digital assets used with full licensing and permission from  [Unsplash]().  Digital assets stored locally and on [Imgur]().
+Digital assets used with full licensing and permission from [Unsplash](). Digital assets stored locally and on [Imgur]().
 
 <br>
 
 ## MVP
-
 
 #### Wireframes
 
@@ -150,7 +145,7 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model.
+![Dummy Link](https://i.imgur.com/RkpGHb9.png)
 
 #### Data Heirarchy
 
@@ -173,25 +168,22 @@ database_db
 
 ### Dependencies
 
-
-
-|     Library      |                                 
-| :--------------: | 
-|      React       | 
-|   React Router   | 
-|      axios       | 
-|     ruby on rails|  
-
+|    Library    |
+| :-----------: |
+|     React     |
+| React Router  |
+|     axios     |
+| ruby on rails |
 
 <br>
 
 ---
 
-
 ## Post-MVP
 
 > Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
-connect users to their posts
+
+- only allow the users that posted the dance workout to edit/delete it
+- category
 
 ---
-
