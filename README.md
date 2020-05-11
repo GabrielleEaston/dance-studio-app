@@ -4,7 +4,7 @@
 
 # Retro
 
-![](https://media.giphy.com/media/T0dcCGcNjVt16/giphy.gif)
+![](https://media.giphy.com/media/26xBE9hktXvsvBaq4/giphy.gif)
 
 - [Overview](#Overview)
   - [Core Features](#Core-Features)
