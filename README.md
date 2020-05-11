@@ -1,6 +1,8 @@
 # dance-studio-app
 
-# Retro Dance Studio
+#Share your favorite dance exercices through online platforms
+
+# Retro 
 
 ![](https://media.giphy.com/media/T0dcCGcNjVt16/giphy.gif)
 
@@ -28,43 +30,49 @@
 
 ## Overview
 
-_**Retro Dance ** Dance like nobody's watching. Dance like it's 1986._
+_**Retro ** Dance like nobody's watching. Like it's 1986. @home_
 
 ### Core Features
 
-_Lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+
+- _Full-stack, full-CRUD app, utilizing a RESTful JSON API with the so-called "React on Rails" stack_
+
+ 
 
 ### Goals
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- Have a **RESTful JSON API**.
+- Build a **Ruby on Rails** server, exposing RESTful JSON endpoints.
+- Build a database with at least 3 tables:
+    - 1 user table
+    - 2 other tables, of your choosing
+    - There must be at least 2 pairs of associated tables. (1:m _or_ m:m)
+  - Utilize **Rails** to define models for interacting with the database.
+  - Implement Authentication using **JWT**.
+  - Implement working generic controller actions for full-CRUD (`index`, `show`, `create`, `update`, `delete`) between the 2 non-user tables AND partial-CRUD (`create`, at least) for the user table.
 
-### Team
+- Have a working, interactive **React** app, built using `npx create-react-app`.
+  - Have at least 8 separate, rendered components in an organized and understandable React file structure.
+  - Utilize functional and class React components appropriately.
+  - Utilize state and props in your components efficiently.
+  - Use _only_ React for DOM Manipulation.
+- Consume data from your **Ruby on Rails API**, and render that data in your components.
+- Utilize **React Router**, for client-side routing.
+- Utilize Authentication, permitting the user to:
+  - Register, login, and send authenticated requests.
+  - Perform `index` or `show` actions, **whether or not they are logged in**.^
+  - Perform `create`, `update`, and `delete` actions **when logged in**.
 
-Created, designed, and developed by [James Madison](https://github.com/mishakessler) for the General Assembly Software Engineering Immersive (November '19 Cohort) Unit 4 Project.
 
 ### Permissions
 
-Digital assets used with full licensing and permission from [Death to Stock Photo](), [Freepik](), and [Unsplash](). Custom digital design and branding by John Lansing. Digital assets stored locally and on [Imgur]().
+Digital assets used with full licensing and permission from  [Unsplash]().  Digital assets stored locally and on [Imgur]().
 
 <br>
 
 ## MVP
 
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
-
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
-
-### Client (Front End)
 
 #### Wireframes
 
@@ -165,32 +173,25 @@ database_db
 
 ### Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project.
 
-|     Library      | Description                                |
-| :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+
+|     Library      |                                 
+| :--------------: | 
+|      React       | 
+|   React Router   | 
+|      axios       | 
+|     ruby on rails|  
+
 
 <br>
 
 ---
 
-> This section is not necessary for your pitch!
 
 ## Post-MVP
 
 > Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+connect users to their posts
 
 ---
 
-## Code Showcase
-
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
-
-## Code Issues & Resolutions
-
-> Use this section to list of all major issues encountered and their resolution, if you'd like.
