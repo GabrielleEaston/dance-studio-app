@@ -122,13 +122,13 @@ src
           |__ DanceList.jsx
             |__ DanceDetails.jsx
             |__ CreateItem.jsx
-              |__ EditList
-              |__ DeleteItem
+              |__ EditItem.jsx
+              |__ DeleteItem.jsx
 |__ services/
     |__ apiConfig.jsx
 ```
 
-```
+````
 
 #### Component Breakdown
 
@@ -154,7 +154,7 @@ database_db
 |__ classes/
 |__ instructors/
 
-```
+````
 
 #### Data Heirarchy
 
