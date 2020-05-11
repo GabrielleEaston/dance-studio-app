@@ -73,29 +73,29 @@ Digital assets used with full licensing and permission from [Unsplash](). Digita
 
 > Use the Wireframes section to display desktop, tablet and mobile views.
 
-<img src="./landing.png" align="center" height="auto" width="600" >
-
 - Desktop Landing
 
-![Dummy Link](url)
+<img src="./landing.png" align="center" height="auto" width="700" >
 
-- Desktop Hero
+- Classes list
 
-![Dummy Link](url)
+<img src="./dance-classes.png" align="center" height="auto" width="700" >
 
-- Resource Index
+- login/register
 
-![Dummy Link](url)
+<img src="./login_register.png" align="center" height="auto" width="700" >
 
-- Resource Show
+- one dance
 
-![Dummy Link](url)
+<img src="./one-dance.png" align="center" height="auto" width="700" >
 
-- Tablet Resource Index
+- edit
 
-![Dummy Link](url)
+<img src="./edit.png" align="center" height="auto" width="700" >
 
-- Mobile Resource Index
+- create
+
+<img src="./create.png" align="center" height="auto" width="700" >
 
 #### Component Hierarchy
 
