@@ -132,7 +132,9 @@ src
 
 #### Component Breakdown
 
+
 ![Dummy Link](https://i.imgur.com/iffMhUh.png)
+
 
 #
 
@@ -140,7 +142,9 @@ src
 
 #### ERD Model
 
+
 ![Dummy Link](https://i.imgur.com/wfy9MNa.png)
+
 
 #### Data Heirarchy
 
