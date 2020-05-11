@@ -165,6 +165,6 @@ database_db
 > Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
 
 - only allow the users that posted the dance workout to edit/delete it
-- category
+- category or instructors/ 
 
 ---
