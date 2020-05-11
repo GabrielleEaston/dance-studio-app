@@ -79,23 +79,23 @@ Digital assets used with full licensing and permission from [Unsplash](). Digita
 
 - Classes list
 
-<img src="./dance_classes.png"  height="auto" width="800" >
+<img src="./dance_classes.png"  height="auto" width="900" >
 
 - login/register
 
-<img src="./login_register.png"  height="auto" width="800" >
+<img src="./login_register.png"  height="auto" width="900" >
 
 - one dance
 
-<img src="./one-dance.png"  height="auto" width="800" >
+<img src="./one-dance.png"  height="auto" width="900" >
 
 - edit
 
-<img src="./edit.png" height="auto" width="800" >
+<img src="./edit.png" height="auto" width="900" >
 
 - create
 
-<img src="./create.png"  height="auto" width="800" >
+<img src="./create.png"  height="auto" width="900" >
 
 #### Component Hierarchy
 
