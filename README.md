@@ -75,7 +75,7 @@ Digital assets used with full licensing and permission from [Unsplash](). Digita
 
 - Desktop Landing
 
-<img src="./landing.png" align="center" height="auto" width="700" >
+<img src="./landing.png" align="center" height="auto" width="900" >
 
 - Classes list
 
