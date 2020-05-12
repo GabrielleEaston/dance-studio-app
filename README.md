@@ -1,9 +1,5 @@
 # dance-studio-app
 
-#Share your favorite dance exercices through online platforms
-
-# Retro
-
 ![](https://media.giphy.com/media/3o7aD2CXkN6owI3wMU/giphy.gif)
 
 - [Overview](#Overview)
@@ -30,6 +26,7 @@
 
 ## Overview
 
+#Allows users to share their favorite dance exercices through online platforms
 _**Retro ** Dance like nobody's watching. Like it's 1986. @home_
 
 ### Core Features
