@@ -128,23 +128,11 @@ src
     |__ apiConfig.jsx
 ```
 
-
-
-#### Component Breakdown
-
-
-![Dummy Link](https://i.imgur.com/iffMhUh.png)
-
-
-#
-
 ### Server (Back End)
 
 #### ERD Model
 
-
 ![Dummy Link](https://i.imgur.com/wfy9MNa.png)
-
 
 #### Data Heirarchy
 
@@ -158,7 +146,7 @@ database_db
 |__ classes/
 |__ instructors/
 
-````
+```
 
 #### Data Heirarchy
 
