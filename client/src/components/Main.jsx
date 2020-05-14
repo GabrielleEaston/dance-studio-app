@@ -15,6 +15,7 @@ import OneDance from "./OneDance";
 import CreateDance from "./CreateDance";
 import AllDances from "./AllDances";
 import UpdateDance from "./UpdateDance";
+import MyPosts from "./MyPosts";
 export default class Main extends Component {
   state = {
     categories: [],
@@ -100,6 +101,8 @@ export default class Main extends Component {
             {...props}
             handleDanceDelete={this.handleDanceDelete}
             dances={this.state.dances}
+            currentUser={this.props.currentUser}
+            
           />
         )} />
         <Route
@@ -110,6 +113,22 @@ export default class Main extends Component {
             return (
               <Category
                 categoryId={id}
+                // categories={this.state.categories}
+                // dances={this.state.dances}
+              />
+            );
+          }}
+        />
+          <Route
+          exact
+          path="/users/posts"
+          render={props => {
+           
+            return (
+              <MyPosts
+                handleDanceDelete={this.handleDanceDelete}
+                dances={this.state.dances}
+                currentUser={this.props.currentUser}
                 // categories={this.state.categories}
                 // dances={this.state.dances}
               />

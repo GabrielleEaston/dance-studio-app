@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 
 export default function AllDances(props) {
+  
   return (
     <div>
       <h3>All dances</h3>
@@ -9,7 +10,8 @@ export default function AllDances(props) {
         <React.Fragment key={dance.id}>
           <h5>{dance.name}</h5>
           <p>{dance.description}</p>
-          <img src={dance.image} />
+          <img src={dance.image} alt={dance.name} />
+
           <button
             onClick={() => {
               props.history.push(`/dances/${dance.id}/edit`);

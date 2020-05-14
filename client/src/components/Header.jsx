@@ -18,6 +18,7 @@ export default function Header(props) {
         <>
           <Link to="/categories">Categories</Link>
           <Link to="/dances">All Dances</Link>
+          <Link to="/users/posts">My Posts</Link>
           <hr />
         </>
       )}
