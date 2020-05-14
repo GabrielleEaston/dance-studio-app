@@ -10,7 +10,8 @@ class CategoriesController < ApplicationController
   	@category = Category.find(params[:id]) 
     @dances = @category.dances 
     render json: @dances
-    
 	end
   
 end
+
+########## 

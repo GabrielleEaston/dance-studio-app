@@ -1,4 +1,6 @@
 class DancesController < ApplicationController
+  before_action :set_dance, only: [:show, :update, :destroy]
+  before_action :authorize_request, only: [:create, :update, :destroy]
 
   def index
     @dances = Dance.all
@@ -6,9 +8,9 @@ class DancesController < ApplicationController
 	end
 
 
-def show
-  @dance = Dance.find(params[:id])
-  render json: @dance
+def show 
+  @dance = Dance.find(params[:id])  
+  render json: @dance 
 end
 
 def create
@@ -34,12 +36,17 @@ def update
 end
 
 def destroy
+  # @dance = Dance.find(params[:id])
   @dance.destroy
 end
 
-private 
+private
+def set_dance
+  @dance = Dance.find(params[:id])
+end
+
   def dance_params 
-    params.require(:dance).permit(:name, :description) 
+    params.require(:dance).permit(:name, :description, :image, :category_id, :user_id) 
   end
 
 
