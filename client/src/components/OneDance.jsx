@@ -41,9 +41,9 @@ export default class OneDance extends Component {
             {/* <button onClick={() => {
             this.props.history.push(`/dances/${dance.id}/edit`);
           }}>Edit</button> */}
-            <Link to="/dances/new">
+            {/* <Link to="/dances/new">
               <button>Create a post</button>
-            </Link>
+            </Link> */}
           </>
         )}
       </div>

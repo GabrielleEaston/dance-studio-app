@@ -1,20 +1,34 @@
 import React, { Component } from "react";
 import { getUserPosts } from "../services/api-helper";
+import { Redirect } from 'react-router-dom'
 // import { Link } from "react-router-dom";
 export default class MyPosts extends Component {
   state = {
-    userPosts: null
+    userPosts: null,
+    updated: false,
+    deleted: false
   };
   componentDidMount() {
     this.setUserPosts();
   }
 
   setUserPosts = async () => {
-    const userPosts = await getUserPosts(3);
-    this.setState({ userPosts });
+    if (this.props.currentUser !== null) {
+      const userPosts = await getUserPosts(this.props.currentUser.id);
+      this.setState({ userPosts });
+      
+    }
   };
 
   render() {
+    const {updated, deleted } = this.state
+    if (updated) {
+      return <Redirect to={`/dances`} />
+    }
+
+    else if (deleted) {
+      return <Redirect to={`/dances`} />
+    }
     const { userPosts } = this.state;
     return (
       <div>

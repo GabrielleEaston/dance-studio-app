@@ -4,6 +4,7 @@ import React from "react";
 export default function AllDances(props) {
   
   return (
+
     <div>
       <h3>All dances</h3>
       {props.dances.map(dance => (
@@ -11,8 +12,11 @@ export default function AllDances(props) {
           <h5>{dance.name}</h5>
           <p>{dance.description}</p>
           <img src={dance.image} alt={dance.name} />
-
-          <button
+          
+{props.currentUser && props.currentUser.id === dance.user_id &&(
+            <>
+         
+         <button
             onClick={() => {
               props.history.push(`/dances/${dance.id}/edit`);
             }}
@@ -25,7 +29,11 @@ export default function AllDances(props) {
             }}
           >
             Delete
-          </button>
+          </button>     
+  </>
+)}
+
+
         </React.Fragment>
       ))}
     </div>
