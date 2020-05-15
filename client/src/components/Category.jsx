@@ -14,18 +14,7 @@ export default class Category extends Component {
     this.setState({ category });
   };
 
-  // handleChange = (e) => {
-  //   const { value } = e.target;
-  //   this.setState({
-  //     flavor: value
-  //   })
-  // }
-
-  // handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   const food = await addFlavor(this.state.flavor, this.state.food.id);
-  //   this.setState({ food });
-  // }
+ 
 
   render() {
     const { category } = this.state;

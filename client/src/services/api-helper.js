@@ -77,3 +77,9 @@ export const destroyDance = async id => {
   const resp = await api.delete(`/dances/${id}`);
   return resp;
 };
+
+
+export const getUserPosts = async (id) => {
+  const resp = await api.get(`/users/${id}`);
+  return resp.data;
+};

@@ -5,7 +5,8 @@ import {
   getAllDances,
   postDance,
   putDance,
-  destroyDance
+  destroyDance,
+ 
 } from "../services/api-helper";
 import Login from "./Login";
 import Register from "./Register";
@@ -15,6 +16,7 @@ import OneDance from "./OneDance";
 import CreateDance from "./CreateDance";
 import AllDances from "./AllDances";
 import UpdateDance from "./UpdateDance";
+import MyPosts from "./MyPosts";
 export default class Main extends Component {
   state = {
     categories: [],
@@ -51,16 +53,15 @@ export default class Main extends Component {
     }));
   };
 
-
-
-  handleDanceDelete = async (id) => {
+  handleDanceDelete = async id => {
     await destroyDance(id);
     this.setState(prevState => ({
       dances: prevState.dances.filter(dance => {
-        return dance.id !== id
+        return dance.id !== id;
       })
-    }))
-  }
+    }));
+  };
+ 
 
   render() {
     return (
@@ -95,13 +96,18 @@ export default class Main extends Component {
           path="/dances"
           render={props => <AllDances {...props} dances={this.state.dances} />}
         /> */}
- <Route exact path='/dances' render={(props) => (
-          <AllDances
-            {...props}
-            handleDanceDelete={this.handleDanceDelete}
-            dances={this.state.dances}
-          />
-        )} />
+        <Route
+          exact
+          path="/dances"
+          render={props => (
+            <AllDances
+              {...props}
+              handleDanceDelete={this.handleDanceDelete}
+              dances={this.state.dances}
+              currentUser={this.props.currentUser}
+            />
+          )}
+        />
         <Route
           exact
           path="/categories/:id"
@@ -110,6 +116,23 @@ export default class Main extends Component {
             return (
               <Category
                 categoryId={id}
+                // categories={this.state.categories}
+                // dances={this.state.dances}
+              />
+            );
+          }}
+        />
+        <Route
+          exact
+          path="/users/posts"
+          render={props => {
+            return (
+              <MyPosts
+                {...props}
+                handleDanceDelete={this.handleDanceDelete}
+                dances={this.state.dances}
+                currentUser={this.props.currentUser}
+                
                 // categories={this.state.categories}
                 // dances={this.state.dances}
               />
@@ -146,7 +169,7 @@ export default class Main extends Component {
 
         <Route
           path="/dances/:id/edit"
-          render={(props) => {
+          render={props => {
             const { id } = props.match.params;
             return (
               <UpdateDance
