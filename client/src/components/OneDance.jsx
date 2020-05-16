@@ -30,21 +30,16 @@ export default class OneDance extends Component {
   render() {
     const { dance } = this.state;
     return (
-      <div>
+      <div className="dance-container">
         {dance && (
-          <>
+          <div className="dance-info-container">
             <div key={dance.id}>
-              <p>{dance.name}</p>
+              <h5>{dance.name}</h5>
               <p>{dance.description}</p>
               <img src={dance.image} />
             </div>
-            {/* <button onClick={() => {
-            this.props.history.push(`/dances/${dance.id}/edit`);
-          }}>Edit</button> */}
-            {/* <Link to="/dances/new">
-              <button>Create a post</button>
-            </Link> */}
-          </>
+           
+          </div>
         )}
       </div>
     );

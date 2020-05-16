@@ -19,17 +19,19 @@ export default class Category extends Component {
   render() {
     const { category } = this.state;
     return (
-      <div>
+      <div className="dance-container">
         {category && (
           <>
             {/* <h3>{category.name}</h3> */}
             {category.map(dance => (
-              <div key={dance.id}>
-                <p>{dance.name}</p>
+              <div key={dance.id} className="border-dance">
+                <div className="dance-info-container">
+                <h5>{dance.name}</h5>
                 <p>{dance.description}</p>
-                <img src={dance.image} />
+                  <img src={dance.image} />
+                  </div>
                 <Link to={`/dances/${dance.id}`}>
-                  <button>Learn More</button>
+                  <button className="all-dances">Learn More</button>
                 </Link>
               </div>
             ))}

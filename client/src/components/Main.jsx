@@ -65,7 +65,7 @@ export default class Main extends Component {
 
   render() {
     return (
-      <main>
+      <main className="main-container">
         <Route
           path="/login"
           render={props => (

@@ -8,10 +8,12 @@ export default function Header(props) {
       {props.currentUser ? (
         <>
           <p>Welcome , {props.currentUser.username}</p>
-          <button onClick={props.handleLogout}>Logout</button>
+          <button className="logout" onClick={props.handleLogout}>Logout</button>
         </>
       ) : (
-        <Link to="/login">Login/Register</Link>
+        <Link to="/login">
+          <span>Login/Register</span>
+        </Link>
       )}
       <hr />
       {props.currentUser && (

@@ -38,7 +38,7 @@ export default class CreateDance extends Component {
   render() {
     const { name, description, image, category_id, user_id } = this.state;
     return (
-      <form
+      <form className="login-form"
         onSubmit={e => {
           e.preventDefault();
           this.props.handleDanceSubmit(this.state);
@@ -46,18 +46,21 @@ export default class CreateDance extends Component {
         }}
       >
         <h3>Create a Post</h3>
+        <label htmlFor="name">name:</label>
         <input
           type="text"
           name="name"
           value={name}
           onChange={this.handleChange}
         />
+        <label htmlFor="description">description:</label>
         <input
           type="text"
           name="description"
           value={description}
           onChange={this.handleChange}
         />
+        <label htmlFor="image">image url:</label>
         <input
           type="text"
           name="image"

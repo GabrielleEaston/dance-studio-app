@@ -1,28 +1,31 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class Login extends Component {
   state = {
-    username: '',
-    email: '',
-    password: ''
-  }
+    username: "",
+    email: "",
+    password: ""
+  };
 
-  handleChange = (e) => {
+  handleChange = e => {
     const { name, value } = e.target;
     this.setState({
       [name]: value
     });
-  }
+  };
 
   render() {
     const { username, email, password } = this.state;
     return (
-      <form onSubmit={(e) => {
-        e.preventDefault();
-        this.props.handleLogin(this.state);
-        this.props.history.push('/');
-      }}>
+      <form
+        className="login-form"
+        onSubmit={e => {
+          e.preventDefault();
+          this.props.handleLogin(this.state);
+          this.props.history.push("/");
+        }}
+      >
         <h3>Login</h3>
         <label htmlFor="username">username:</label>
         <input
@@ -51,9 +54,12 @@ export default class Login extends Component {
           onChange={this.handleChange}
         />
         <br />
-        <Link to='/register'>register</Link>
+        <br></br>
+        <br />
+        <br />
+        <Link to="/register">register</Link>
         <button>Submit</button>
       </form>
-    )
+    );
   }
 }

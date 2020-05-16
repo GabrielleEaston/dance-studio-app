@@ -32,6 +32,7 @@ export default class UpdateDance extends Component {
     const { name, description, image } = this.state;
     return (
       <form
+        className="login-form"
         onSubmit={e => {
           e.preventDefault();
           this.props.handleDanceUpdate(this.props.danceId, this.state);
@@ -39,18 +40,21 @@ export default class UpdateDance extends Component {
         }}
       >
         <h3>Edit a Post</h3>
+        <label htmlFor="name">name:</label>
         <input
           type="text"
           name="name"
           value={name}
           onChange={this.handleChange}
         />
+        <label htmlFor="description">description:</label>
         <input
           type="text"
           name="description"
           value={description}
           onChange={this.handleChange}
         />
+        <label htmlFor="image">image url:</label>
         <input
           type="text"
           name="image"
