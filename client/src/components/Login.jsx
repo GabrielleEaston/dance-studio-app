@@ -57,7 +57,9 @@ export default class Login extends Component {
         <br></br>
         <br />
         <br />
-        <Link to="/register">register</Link>
+        <Link className="register" to="/register">
+          register
+        </Link>
         <button>Submit</button>
       </form>
     );

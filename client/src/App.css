@@ -23,6 +23,7 @@ button {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
+  font-weight: bold;
 }
 button.logout {
   background-color: #013366;
@@ -127,6 +128,9 @@ button.all-dances {
   width: 20%;
   background-color: #9c889c;
 }
+a.register{
+  background-color: #9c889c;
+}
 .dance-info-container {
   display: flex;
   flex-direction: column;
@@ -155,4 +159,43 @@ button.all-dances {
   width: 250px;
   object-fit: contain;
   border: 1px solid #9c889c;
+}
+
+
+@media (max-width: 550px){
+header{
+  flex-direction: column;
+  height: 100%;
+}
+
+
+  .login-form {
+    margin: 5% 5%;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.2),
+      0 0 0 2px rgba(255, 255, 255, 0.4);
+    text-align: left;
+  }
+  .login-form h3{
+    font-size: 1.2em;
+  }
+  input, select{
+    border: 1px solid white;
+    padding: 8px;
+   
+  }
+  a.register{
+    padding: 8px;
+    font-size: 14px;
+  }
+  .login-form button{
+    padding: 5px;
+    font-size: 14px;
+  }
+  .dance-container{
+    width: 100%;
+  }
+  .dance-info-container p{
+    width: 80%;
+  }
+
 }
