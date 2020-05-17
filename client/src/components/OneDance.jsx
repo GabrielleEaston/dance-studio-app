@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { getOneDance } from "../services/api-helper";
-import { Link } from "react-router-dom";
 export default class OneDance extends Component {
   state = {
     dance: null
@@ -14,18 +13,7 @@ export default class OneDance extends Component {
     this.setState({ dance });
   };
 
-  // handleChange = (e) => {
-  //   const { value } = e.target;
-  //   this.setState({
-  //     flavor: value
-  //   })
-  // }
 
-  // handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   const food = await addFlavor(this.state.flavor, this.state.food.id);
-  //   this.setState({ food });
-  // }
 
   render() {
     const { dance } = this.state;
@@ -36,7 +24,7 @@ export default class OneDance extends Component {
             <div key={dance.id}>
               <h5>{dance.name}</h5>
               <p>{dance.description}</p>
-              <img src={dance.image} />
+              <img src={dance.image} alt={dance.name}/>
             </div>
            
           </div>

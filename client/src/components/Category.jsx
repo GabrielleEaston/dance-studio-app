@@ -22,13 +22,13 @@ export default class Category extends Component {
       <div className="dance-container">
         {category && (
           <>
-            {/* <h3>{category.name}</h3> */}
+          
             {category.map(dance => (
               <div key={dance.id} className="border-dance">
                 <div className="dance-info-container">
                 <h5>{dance.name}</h5>
                 <p>{dance.description}</p>
-                  <img src={dance.image} />
+                  <img src={dance.image} alt={dance.name}/>
                   </div>
                 <Link to={`/dances/${dance.id}`}>
                   <button className="all-dances">Learn More</button>

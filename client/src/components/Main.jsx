@@ -147,6 +147,7 @@ export default class Main extends Component {
             const { id } = props.match.params;
             return (
               <OneDance
+                {...props}
                 danceId={id}
                 // categories={this.state.categories}
                 // dances={this.state.dances}
