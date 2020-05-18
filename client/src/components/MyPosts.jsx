@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { getUserPosts } from "../services/api-helper";
 import { Redirect } from "react-router-dom";
-// import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 export default class MyPosts extends Component {
   state = {
     userPosts: null,

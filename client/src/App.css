@@ -47,7 +47,7 @@ header {
 header h1 {
   font-family: "Monoton", cursive;
 }
-header p{
+header p {
   text-transform: capitalize;
 }
 
@@ -166,9 +166,8 @@ a.register {
   border: 1px solid #9c889c;
 }
 .categories {
-  background-color: #b49dc682;
+  background-color: rgba(113, 77, 140, 0.51);
   font-weight: 600;
-  
 }
 
 @media (max-width: 1045px) {

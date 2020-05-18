@@ -17,6 +17,7 @@ export default function AllDances(props) {
                 className="all-dances"
                 onClick={() => {
                   props.history.push(`/dances/${dance.id}/edit`);
+                  
                 }}
               >
                 Edit
@@ -36,3 +37,7 @@ export default function AllDances(props) {
     </div>
   );
 }
+
+
+
+

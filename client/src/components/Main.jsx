@@ -176,6 +176,7 @@ export default class Main extends Component {
                 {...props}
                 handleDanceUpdate={this.handleDanceUpdate}
                 danceId={id}
+                dances={this.state.dances}
               />
             );
           }}

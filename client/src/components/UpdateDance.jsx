@@ -36,7 +36,7 @@ export default class UpdateDance extends Component {
         onSubmit={e => {
           e.preventDefault();
           this.props.handleDanceUpdate(this.props.danceId, this.state);
-          this.props.history.push("/dances");
+          this.props.history.push(`/dances/${this.props.danceId}`);
         }}
       >
         <h3>Edit a Post</h3>
