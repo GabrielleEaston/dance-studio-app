@@ -5,8 +5,7 @@ import {
   getAllDances,
   postDance,
   putDance,
-  destroyDance,
- 
+  destroyDance
 } from "../services/api-helper";
 import Login from "./Login";
 import Register from "./Register";
@@ -61,7 +60,6 @@ export default class Main extends Component {
       })
     }));
   };
- 
 
   render() {
     return (
@@ -132,7 +130,7 @@ export default class Main extends Component {
                 handleDanceDelete={this.handleDanceDelete}
                 dances={this.state.dances}
                 currentUser={this.props.currentUser}
-                
+
                 // categories={this.state.categories}
                 // dances={this.state.dances}
               />
@@ -157,7 +155,8 @@ export default class Main extends Component {
         />
 
         <Route
-          path="/dances/new"
+          exact
+          path="/new"
           render={props => (
             <CreateDance
               {...props}
