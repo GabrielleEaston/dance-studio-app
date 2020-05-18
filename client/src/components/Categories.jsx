@@ -6,7 +6,7 @@ export default function Categories(props) {
     <div>
       {props.categories.map(category => (
         <React.Fragment key={category.id}>
-          <Link to={`/categories/${category.id}`}>{category.title}</Link>
+          <Link className="categories" to={`/categories/${category.id}`}>{category.title}</Link>
         </React.Fragment>
       ))}
     </div>

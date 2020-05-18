@@ -47,6 +47,9 @@ header {
 header h1 {
   font-family: "Monoton", cursive;
 }
+header p{
+  text-transform: capitalize;
+}
 
 .main-container {
   background-image: url("./assets/bg.jpg");
@@ -161,6 +164,11 @@ a.register {
   width: 250px;
   object-fit: contain;
   border: 1px solid #9c889c;
+}
+.categories {
+  background-color: #b49dc682;
+  font-weight: 600;
+  
 }
 
 @media (max-width: 1045px) {
