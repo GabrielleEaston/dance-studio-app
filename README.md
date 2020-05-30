@@ -26,34 +26,31 @@
 
 ## Overview
 
-#Allows users to share their favorite dance exercices through online platforms
-_**Retro ** Dance like nobody's watching. Like it's 1986. @home_
+-_Content management system for dance studio_
+
 
 ### Core Features
 
 - _Full-stack, full-CRUD app, utilizing a RESTful JSON API with the so-called "React on Rails" stack_
 
-### Goals
+### Technology
 
-- Have a **RESTful JSON API**.
-- Build a **Ruby on Rails** server, exposing RESTful JSON endpoints.
-- Build a database with at least 3 tables:
+-  **RESTful JSON API**.
+- Back End **Ruby on Rails** server, exposing RESTful JSON endpoints.
+- Postgresql database with tables:
 
   - 1 user table
-  - 2 other tables, of your choosing
-  - There must be at least 2 pairs of associated tables. (1:m _or_ m:m)
-  - Utilize **Rails** to define models for interacting with the database.
-  - Implement Authentication using **JWT**.
-  - Implement working generic controller actions for full-CRUD (`index`, `show`, `create`, `update`, `delete`) between the 2 non-user tables AND partial-CRUD (`create`, at least) for the user table.
+  - 1 category table
+  - 1 dance classes table
+  - 2 pairs of associated tables. 
+  - Used **Rails** to define models for interacting with the database.
+  - Authentication using **JWT**.
+  - Working generic controller actions for full-CRUD (`index`, `show`, `create`, `update`, `delete`) between the 2 non-user tables AND partial-CRUD (`create`, at least) for the user table.
 
-- Have a working, interactive **React** app, built using `npx create-react-app`.
-  - Have at least 8 separate, rendered components in an organized and understandable React file structure.
-  - Utilize functional and class React components appropriately.
-  - Utilize state and props in your components efficiently.
-  - Use _only_ React for DOM Manipulation.
+- Front End:  **React** app, built using `npx create-react-app`.
 - Consume data from your **Ruby on Rails API**, and render that data in your components.
-- Utilize **React Router**, for client-side routing.
-- Utilize Authentication, permitting the user to:
+- **React Router**, for client-side routing.
+- Authentication, permitting the user to:
   - Register, login, and send authenticated requests.
   - Perform `index` or `show` actions, **whether or not they are logged in**.^
   - Perform `create`, `update`, and `delete` actions **when logged in**.
@@ -141,7 +138,6 @@ database_db
 |__ users/
 |__ category/
 |__ classes/
-|__ instructors/
 
 ```
 
@@ -164,12 +160,3 @@ database_db
 
 ---
 
-## Post-MVP
-
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
-
-- only allow the users that posted the dance workout to edit/delete it
-- instructors /
-- youtube videos
-
----
