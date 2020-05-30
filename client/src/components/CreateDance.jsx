@@ -15,7 +15,7 @@ export default class CreateDance extends Component {
       [name]: value
     });
   };
- 
+
   handleChangeSelect = e => {
     const { value } = e.target;
     this.setState({
@@ -30,19 +30,18 @@ export default class CreateDance extends Component {
     });
   };
 
-
-
   render() {
     const { name, description, image, category_id, user_id } = this.state;
     return (
-      <form className="login-form"
+      <form
+        className="login-form"
         onSubmit={e => {
           e.preventDefault();
           this.props.handleDanceSubmit(this.state);
           this.props.history.push("/dances");
         }}
       >
-        <h3>Create a Post</h3>
+        <h3>Add a Dance Class</h3>
         <label htmlFor="name">name:</label>
         <input
           type="text"

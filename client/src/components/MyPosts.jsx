@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { getUserPosts } from "../services/api-helper";
 import { Redirect } from "react-router-dom";
-//import { Link } from "react-router-dom";
 export default class MyPosts extends Component {
   state = {
     userPosts: null,
@@ -31,7 +30,7 @@ export default class MyPosts extends Component {
       <div className="dance-container">
         {this.props.currentUser && (
           <div>
-            <h3>{this.props.currentUser.username}'s posts</h3>
+            <h3>{this.props.currentUser.username}'s classes</h3>
           </div>
         )}
 
@@ -67,7 +66,7 @@ export default class MyPosts extends Component {
           </>
         ) : (
           <>
-            <h2>You have no posts</h2>
+            <h2>You did not add any classes yet</h2>
           </>
         )}
       </div>
