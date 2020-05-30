@@ -15,9 +15,7 @@ export default class CreateDance extends Component {
       [name]: value
     });
   };
-  // handleSelect(event) {
-  //   this.setState({ user_id: event.target.value });
-  // }
+ 
   handleChangeSelect = e => {
     const { value } = e.target;
     this.setState({
@@ -32,8 +30,7 @@ export default class CreateDance extends Component {
     });
   };
 
-  // name="username"
-  // value={username}
+
 
   render() {
     const { name, description, image, category_id, user_id } = this.state;

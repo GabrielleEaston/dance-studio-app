@@ -50,7 +50,6 @@ header h1 {
 header p {
   text-transform: capitalize;
 }
-
 .main-container {
   background-image: url("./assets/bg.jpg");
   background-position: center;
@@ -86,7 +85,6 @@ header p {
   /* margin-bottom: 2%; */
   width: 40%;
 }
-
 input,
 select {
   border: 5px solid white;
@@ -99,15 +97,17 @@ select {
   margin: 0 0 10px 0;
   width: 100%;
   font-weight: 700;
+  font-size: 16px;
+  font-family: "PT Sans", sans-serif;
 }
-
 label {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-
 img {
-  width: 200px;
+  width: 300px;
+  max-width: 100%;
+  object-fit: contain;
 }
 .dance-container {
   background-color: #521d5cd1;
